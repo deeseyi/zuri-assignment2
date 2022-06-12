@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="border p-8 w-[400px] mx-auto my-4 bg-white drop-shadow-lg">
+        <h1 class="text-center py-2 my-4 font-bold text-3xl">Number Guessing Game</h1>
+        <div class=" flex justify-center items-center space-x-4 my-6 ">
+            <button class="py-2 px-3 border font-semibold text-sm bg-blue-500 text-white rounded" onclick="guessNumber()">Start Game</button>
+            <button class="py-2 px-3 border font-semibold text-sm bg-blue-500 text-white rounded" onclick="showLastScore()">Last Score</button>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/combine/npm/js-cookie@3.0.1,npm/js-cookie@3.0.1/index.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
