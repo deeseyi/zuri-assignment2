@@ -7,15 +7,16 @@ let user = {
 function guessNumber() {
     getUsername()
     let number = 2
-    const randomNumber = generateRandomNumber(1, number)
-
+    let randomNumber = generateRandomNumber(1, number)
     let guess = getInput(number)
     while (guess === randomNumber) {
         alert("you guessed it!")
         user.score++
         Cookies.set('score', user.score)
         number += 1
+        randomNumber = generateRandomNumber(1, number)
         guess = getInput(number)
+    
     }
     if (guess !== randomNumber) {
         user.score = Cookies.get('score')
